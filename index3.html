@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background: linear-gradient( 90deg,rgb(123, 102, 255),rgb(95, 189, 255),rgb(150, 239, 255),rgb(197, 255, 248));
+           
+            
+        }
+        
+        .outerdiv{
+           background: linear-gradient( 90deg,rgb(255, 240, 189),rgb(253, 171, 158),rgb(199, 219, 156),rgb(229, 0, 70));
+            padding: 20px ;
+            margin-right: 20px;
+            box-shadow: 0px 4px 6px rgb(50,50,50);
+            width: 100% ;
+        }
+       .innerdiv{
+        display: flex;
+        padding: 20px 20px ;
+        width: calc(250px*5);
+        animation:sliding 5s linear infinite ;
+       }
+       @keyframes sliding{
+        0%
+        {transform:translateX(0%);
+        }
+        100%{
+            transform: translateX(-50%);
+        }
+
+       }
+       img{
+        width: 250px;
+        height: 150px;
+        margin-right: 20px;
+        box-shadow: 2px 2px 2px whitesmoke;
+        object-fit: cover;
+        border-radius: 20px;
+       }
+       .innerdiv:hover{
+        animation-play-state: paused;
+       }
+
+    </style>
+</head>
+<body>
+   <div class="outerdiv">
+    <div class="innerdiv"> 
+        <img src="download.jpg" alt="unstable network">
+           
+        <img src="downlaod1.jpg" alt="unstable network">
+        <img src="background1.jpeg" alt="unstable network">
+        <img src="picture.jpeg" alt="unstable network">
+        <img src="picture1.jpeg" alt="unstable network">
+    </div>
+   </div>
+    
+    
+</body>
+</html>
